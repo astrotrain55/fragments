@@ -1,0 +1,18 @@
+html,
+body,
+.l-page
+  height 100% // `Always on the bottom` Footer
+
+.l-page
+  display flex // `Always on the bottom` Footer
+  flex-direction column // `Always on the bottom` Footer
+
+.l-container
+  flex-grow 1 // `Always on the bottom` Footer
+
+*
+  @media (prefers-reduced-motion: reduce)
+    scroll-behavior auto !important
+    animation-duration .01ms !important
+    transition-duration .01ms !important
+    animation-iteration-count 1 !important
